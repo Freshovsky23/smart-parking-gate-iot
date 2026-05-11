@@ -1,0 +1,35 @@
+# === ARDUINO ===
+# Ignore compiled binaries and build artifacts from Arduino IDE
+*.hex
+*.bin
+*.elf
+*.eep
+*.o
+*.d
+*.a
+*.map
+build/
+.build/
+
+# === PYTHON ===
+# Ignore Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# === IDE & SYSTEM ===
+# Ignore editor-specific and OS-generated files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === DOCKER ===
+# Ignore local database directories (if stored locally instead of named volumes)
+.docker-data/

@@ -1,0 +1,35 @@
+# Specify the version of the Docker Compose syntax
+version: '3.8'
+
+services:
+  # Define the database service for the parking system
+  parking_database:
+    # Use the official PostgreSQL version 15 image from Docker Hub
+    image: postgres:15
+    
+    # Assign a custom name to the container for easier identification in terminal
+    container_name: parking_postgres
+    
+    # Set environment variables to configure the database upon first startup
+    # IMPORTANT: Do not hardcode real credentials in public repositories.
+    environment:
+      - POSTGRES_USER=YOUR_USER
+      - POSTGRES_PASSWORD=YOUR_PASSWORD
+      - POSTGRES_DB=parking_db
+      
+    # Map physical ports from your host machine to the container
+    ports:
+      - "5433:5432" # <-- Host port 5433 forwards to the container's internal port 5432
+      
+    # Mount a persistent volume to the container to prevent data loss
+    # when the container is stopped or removed
+    volumes:
+      - parking_data:/var/lib/postgresql/data
+      
+    # Ensure the container starts automatically after a crash or system reboot,
+    # unless it was manually stopped by the user
+    restart: unless-stopped
+
+# Declare the named volume used by the database service above
+volumes:
+  parking_data:
