@@ -70,19 +70,4 @@ Watch the system in action on YouTube:
 1. Open your terminal in the project directory.
 2. Start the PostgreSQL database by running:
    ```bash
-   docker-compose up -d
-3. Resetting the Game: Press the * key at any moment to clear the board, reset scores, and start a new match.
-4. Winning/Draw: The system continuously evaluates the board state. If a player completes a row, column, or diagonal, the winner is declared immediately on the screen, and further moves are locked until a reset. If all spaces are filled with no winner, a DRAW! is announced.
-💻 Software & Libraries Used
-This project is written in C++ using the Arduino core framework. It relies on the following libraries:
-
-Wire.h (Built-in I2C communication)
-
-LiquidCrystal_I2C by Frank de Brabander (LCD management)
-
-Keypad by Mark Stanley, Alexander Brevig (Matrix keypad scanning)
-
-👥 Author
-GitHub: @Freshovsky23
-
-Email: Heilman.Wiktor23@gmail.com   
+   docker-compose up -d  
