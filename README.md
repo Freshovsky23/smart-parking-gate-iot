@@ -4,6 +4,18 @@ An automated parking entrance system based on Arduino, integrated with a Python 
 
 This project demonstrates a complete IoT pipeline: from physical hardware sensors and human-machine interaction (HMI) to serial data communication and persistent database storage.
 
+---
+
+## 📺 Project Presentation & Demo
+
+Watch the system in action on YouTube:
+
+[![Smart Parking Gate System Demo](https://img.shields.io/badge/YouTube-Video_Demo-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/shorts/gIdH1JGsEO8)
+
+*Click the badge above to watch the project implementation and physical mechanical execution details.*
+
+---
+
 ## 🚀 Key Features
 
 * **Ultrasonic Detection:** Automatically detects arriving vehicles within a range of 2-15 cm using the HC-SR04 sensor.
