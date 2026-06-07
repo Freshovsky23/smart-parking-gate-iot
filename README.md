@@ -35,7 +35,7 @@ The project has evolved from a breadboard prototype into a robust, custom-design
 ### 📐 PCB View (3D Render)
 The board features optimized power traces (0.50 mm), a precise potentiometer for contrast alignment, and a solid ground plane (GND Copper Zone) on the bottom layer.
 
-![Custom PCB Shield 3D Render](hardware/Parking.png)
+![Custom PCB Shield 3D Render](Parking.png)
 
 ### 🛠️ Hardware Components
 * **Microcontroller:** Arduino Uno R3 (or compatible)
